@@ -25,7 +25,7 @@ const Form = ({ addItem }) => {
           onChange={(e) => setItemValue(e.target.value)}
         />
         <button type="submit" className="btn">
-          Add items
+          Add Task
         </button>
       </div>
     </form>
