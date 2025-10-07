@@ -10,7 +10,7 @@ const SingleItem = ({ item, deleteBtn, editItem }) => {
       />
       <p
         style={{
-          textTransform: "capitlize",
+          textTransform: "capitalize",
           textDecoration: item.isCompleted && "line-through",
         }}
       >
