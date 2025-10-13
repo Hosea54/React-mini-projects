@@ -1,4 +1,12 @@
+import Home from "./Home";
+import Modal from "./Modal";
+
 const App = () => {
-  return <h2>Sidebar</h2>;
+  return (
+    <>
+      <Home />
+      <Modal />
+    </>
+  );
 };
 export default App;
