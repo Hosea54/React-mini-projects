@@ -1,5 +1,5 @@
 /* ============= GLOBAL CSS =============== */
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 *,
 ::after,
 ::before {
@@ -164,6 +164,91 @@ PROJECT CSS
 body {
   background: #0f172a;
   color: #e2e8f0;
+}
+/* 
+============= 
+Navbar 
+=============== 
+*/
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-center {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ee0979;
+  border-radius: 2px;
+}
+.toggle-btn {
+  width: 2rem;
+  height: 2rem;
+  background: var(--white);
+  color: var(--primary-700);
+  border-radius: var(--borderRadius);
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.toggle-btn:hover {
+  transform: scale(1.05);
+}
+/* 
+============= 
+Navlinks
+=============== 
+*/
+.nav-links {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+
+    align-self: stretch;
+  }
+  .nav-center {
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .nav-link {
+    padding: 0 1rem;
+    color: var(--white);
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+    cursor: pointer;
+  }
 }
 /* 
 ============= 
