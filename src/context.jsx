@@ -6,8 +6,11 @@ export const AppProvider = ({ children }) => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
+  const openSidebar = () => {
+    setIsSidebarOpen(true);
+  };
   return (
-    <AppContext.Provider value={{ isSidebarOpen, closeSidebar }}>
+    <AppContext.Provider value={{ isSidebarOpen, closeSidebar, openSidebar }}>
       {children}
     </AppContext.Provider>
   );
