@@ -1,9 +1,20 @@
 import { useGlobalContext } from "./context";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import Submenu from "./Submenu";
 
 const App = () => {
   const { name } = useGlobalContext();
   console.log(name);
 
-  return <h2>Coda submenus</h2>;
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+      <Sidebar />
+      <Submenu />
+    </main>
+  );
 };
 export default App;
