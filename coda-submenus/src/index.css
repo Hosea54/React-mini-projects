@@ -326,7 +326,7 @@ Hero
 =============== 
 */
 .hero-container {
-  min-height: cal(100vh-5rem);
+  min-height: calc(100vh-5rem);
   display: grid;
   place-items: center;
 }
@@ -378,7 +378,7 @@ Hero
   .show-submenu {
     visibility: visible;
     opacity: 1;
-    transform: rotateX(0deg) translatex(-50%);
+    transform: rotateX(0deg) translateX(-50%);
     z-index: 10;
   }
   .submenu h5 {
