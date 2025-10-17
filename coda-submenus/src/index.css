@@ -356,7 +356,7 @@ Hero
     display: none;
   }
 }
-@media screen and (min-width: 992) {
+@media screen and (min-width: 992px) {
   .submenu {
     display: block;
     position: fixed;
@@ -366,19 +366,19 @@ Hero
     max-width: var(--max-width);
     background: var(--white);
     padding: 2rem;
-    transform: rotatex(-90deg) translateX(-50%);
+    transform: rotateX(-90deg) translateX(-50%);
     transform-origin: top;
     perspective: 1000px;
     border-radius: var(--borderRadius);
     visibility: hidden;
     opacity: 0;
-    transform: tranform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    transition: tranform 0.3s ease-in-out, opacity 0.2s ease-in-out;
     z-index: -1;
   }
   .show-submenu {
     visibility: visible;
     opacity: 1;
-    transform: rotateX(0deg) translatex(50%);
+    transform: rotateX(0deg) translatex(-50%);
     z-index: 10;
   }
   .submenu h5 {
