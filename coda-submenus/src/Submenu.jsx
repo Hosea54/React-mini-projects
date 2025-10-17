@@ -1,5 +1,5 @@
 import { useGlobalContext } from "./context";
-
+import sublinks from "./data";
 const Submenu = () => {
   const { pageId, setPageId } = useGlobalContext();
   const currentPage = sublinks.find((item) => item.pageId === pageId);
