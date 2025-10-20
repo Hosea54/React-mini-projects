@@ -21,7 +21,7 @@ Built with **React Hooks**, **Context API**, and **useRef** for tracking DOM ele
 
 ## Quick Start
 ```bash
-git clone https://github.com/yourusername/react-mini-projects.git
+git clone https://github.com/Hosea54/React-mini-projects.git
 cd react-mini-projects/coda-submenus
 npm install
 npm run dev
