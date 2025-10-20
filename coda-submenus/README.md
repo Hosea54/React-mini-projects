@@ -1,7 +1,7 @@
 # Strapi Submenus — React Project
 
 ## Live Demo
-[View Project](your-live-demo-link-here)
+[View Project](https://fanciful-crumble-7e60b7.netlify.app/)
 
 ## About
 Responsive **React** project inspired by the **Strapi** website.  
